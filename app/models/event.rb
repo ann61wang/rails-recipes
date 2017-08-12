@@ -15,4 +15,7 @@ class Event < ApplicationRecord
    def generate_friendly_id
      self.friendly_id ||= SecureRandom.uuid
    end
+
+   STATUS = ["draft", "public", "private"]
+   validates_inclusion_of :status, :in => STATUS
 end

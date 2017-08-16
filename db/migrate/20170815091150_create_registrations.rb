@@ -11,7 +11,6 @@ class CreateRegistrations < ActiveRecord::Migration[5.0]
       t.string :cellphone
       t.string :website
       t.text :bio
-      t.timestamps
 
       t.timestamps
     end

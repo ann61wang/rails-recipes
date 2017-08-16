@@ -6,7 +6,7 @@ class Event < ApplicationRecord
   has_many :tickets, :dependent => :destroy, :inverse_of  => :event
   accepts_nested_attributes_for :tickets, :allow_destroy => true, :reject_if => :all_blank
 
-  validates_presence_of :name, :friendly_id
+  validates_presence_of :name, :friendly_id, :tickets
   validates_uniqueness_of :friendly_id
   validates_format_of :friendly_id, :with => /\A[a-z0-9\-]+\z/
 

@@ -21,7 +21,12 @@ Rails.application.routes.draw do
       post :undo
     end
     resources :events do
-      resources :registrations, :controller => "event_registrations"
+      resources :registration_imports
+      resources :registrations, :controller => "event_registrations" do
+        collection do
+          post :import
+        end
+      end
       collection do
         post :bulk_update
       end

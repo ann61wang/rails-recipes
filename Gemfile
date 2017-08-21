@@ -52,7 +52,7 @@ gem "ransack"
 gem "carrierwave"
 gem "mini_magick"
 gem "paper_trail"
-gem 'letter_opener'
+gem 'letter_opener', group: :development
 gem 'premailer-rails'
 
 group :development, :test do

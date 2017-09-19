@@ -3,7 +3,7 @@ default: &default
   encoding: utf8
   username: root
   password: king*queen61
-  host: 127.0.0.1
+  host: localhost
   port: 3306
 
 development:
@@ -13,7 +13,7 @@ development:
 test:
   <<: *default
   database: test_db_name
-  
+
 production:
   <<: *default
   database: production_db_name

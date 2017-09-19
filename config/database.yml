@@ -3,7 +3,7 @@ default: &default
   encoding: utf8
   username: root
   password: king*queen61
-  host: localhost
+  host: 127.0.0.1
   port: 3306
 
 development:

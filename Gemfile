@@ -54,7 +54,7 @@ gem "mini_magick"
 gem "paper_trail"
 gem 'letter_opener', group: :development
 gem 'premailer-rails'
-gem "mysql2"
+gem 'mysql2','~> 0.4.0'
 
 group :development, :test do
   gem 'rspec-rails'

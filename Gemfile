@@ -62,7 +62,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
-  gem 'capistrano-sidekiq','0.5.3'
+  gem 'capistrano-sidekiq'
 end
 
 group :development do
